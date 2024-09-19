@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Robo Girls';
-    src: url('/fonts/Robo_girls/RoboGirls-4BzEB.ttf');
+    src: url('../fonts/Robo_girls/RoboGirls-4BzEB.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'space age';
-    src: url('/fonts/space_age/space\ age.ttf');
+    src: url('../fonts/space_age/space\ age.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: 'Dosis';
-    src: url('/fonts/Dosis/Dosis v1.7/Dosis-Medium.ttf');
+    src: url('../fonts/Dosis/Dosis v1.7/Dosis-Medium.ttf');
     font-weight: normal;
     font-style: normal;
 }
