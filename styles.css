@@ -40,18 +40,23 @@ body {
 
 
 .nav-bar{
-    border-bottom: .5px solid rgba(255,255,255,0.1);
+    border-radius:9999px;
+    border: 1px solid rgba(102, 252, 241, 0.3);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 3rem;
-    width: 100%;
+    width: calc(100% - 8rem);
     padding: 0 2rem;
     box-sizing: border-box;
     position: fixed;
-    top: 0;
+    margin: 0.5rem auto;
     z-index: 100000;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0,.2)    
 
 
 
@@ -81,24 +86,25 @@ ul  :hover {
 }
 
 .hero {
-    background-color: #0B0C10;
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    --dot-bg: #1F2833;
-    --dot-color: #66FCF1  ;
+    --dot-color: rgba(102, 252, 241, 0.5);  /* Adjusted for visibility */
     --dot-size: 1.3px;
     --dot-space: 22px;
-      background:
-          linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-          linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-          var(--dot-color);
+    background-image: 
+        radial-gradient(var(--dot-color) var(--dot-size), transparent var(--dot-size)),
+        radial-gradient(var(--dot-color) var(--dot-size), transparent var(--dot-size)),
+        radial-gradient(circle, rgba(11,12,16,1) 0%, rgba(31,40,51,1) 35%, rgba(63,120,119,1) 81%);
+    background-size: var(--dot-space) var(--dot-space), var(--dot-space) var(--dot-space), 100% 100%;
+    background-position: 0 0, calc(var(--dot-space) / 2) calc(var(--dot-space) / 2), 0 0;
     top: 0;
-  }
+    overflow-x: hidden;
+}
 
 .hero-title {
     color: #66FCF1;
@@ -148,5 +154,5 @@ ul  :hover {
 }
 
 .footer {
-    background-color: #1F2833;
+    background: radial-gradient(circle, rgba(11,12,16,1) 0%, rgba(31,40,51,1) 35%, rgba(69,162,158,1) 100%);
 }
