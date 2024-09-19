@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Robo Girls';
+    src: url('/fonts/Robo_girls/RoboGirls-4BzEB.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'space age';
+    src: url('/fonts/space_age/space\ age.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('/fonts/Dosis/Dosis v1.7/Dosis-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+
+    max-height: 100%;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #1F2833;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.nav-bar{
+    border-bottom: .5px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 100000;
+    backdrop-filter: blur(10px);
+
+
+
+    
+}
+
+.logo {
+    color: #66FCF1;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-list {
+    padding: 0;
+    border: none;
+    color: #66FCF1;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    font-weight: bold;
+}
+
+ul  :hover {
+    color: #45A29E;
+}
+
+.hero {
+    background-color: #0B0C10;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    --dot-bg: #1F2833;
+    --dot-color: #66FCF1  ;
+    --dot-size: 1.3px;
+    --dot-space: 22px;
+      background:
+          linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+          linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+          var(--dot-color);
+    top: 0;
+  }
+
+.hero-title {
+    color: #66FCF1;
+    font-size: 5rem;
+    margin: 0;
+    font-family: 'space age';
+    font-size: 8rem;
+    overflow: hidden;
+    
+  }
+
+.intro {
+
+    color: #45A29E;
+    font-size: 5rem;
+    margin: 0;
+    overflow: hidden;
+    letter-spacing: 0.5rem;
+}
+
+.hero-title span {
+    display: inline-block;
+    transition: transform 0.5s ease, color 0.5s ease;
+    will-change: transform, color;
+    font-weight: 700;
+    position: relative;
+    width: 8rem;
+    line-height: 1em;
+}
+
+.intro span {
+    display: inline-block;
+    transition: transform 0.5s ease, color 0.5s ease;
+    will-change: transform, color;
+    position: relative;
+    width: 5;
+    letter-spacing: 1.5rem;
+
+}
+
+
+.nav-list span {
+    color: #66FCF1;
+    list-style: none;
+    gap: 2rem;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #1F2833;
+}
