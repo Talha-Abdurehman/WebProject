@@ -1,0 +1,2 @@
+const supabaseUrl = 'https://bzejwmutevysxssmpgsl.supabase.co'
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ6ZWp3bXV0ZXZ5c3hzc21wZ3NsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjY4NDk3NzEsImV4cCI6MjA0MjQyNTc3MX0.xGpU2x8oOuEfkC2NqcLNCqIKIMnXEYwe6SpEW5E2ytg'

@@ -4,6 +4,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="config.js"></script>
     <title>Talha Abdurehman</title>
     <link href="styles.css"  rel="stylesheet"> 
 </head>
@@ -29,16 +30,16 @@
     <div class="footer">
 
         <h1 class="footerTitle">CONTACT ME HERE</h1>
-        <form action="" method="post">
+        <form action="" id="userForm" method="post">
 
             <ul class="contact">
                 <li class="input-col">
                     <label for="name">NAME</label>
-                    <input type="text" placeholder="Name" id="name" name="user_name">
+                    <input type="text" placeholder="Name" id="name" name="username">
                 </li>
                 <li class="input-col">
                     <label for="email">EMAIL</label>
-                    <input type="email" placeholder="Email" id="email" name="user_email">
+                    <input type="email" placeholder="Email" id="email" name="useremail">
                 </li>
                 <li class="input-col">
                     <label for="phone">PHONE</label>
@@ -50,7 +51,7 @@
                     <textarea for="msg" placeholder="Your Message" id="user_message"></textarea>
                 </div>
 
-                <button type="submit">SUBMIT</button>
+                <button id="submit-button" type="submit">SUBMIT</button>
             </form>
 
         
@@ -59,6 +60,7 @@
     
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script src="script.js"></script>
+    <script src="main.js" type="module"></script>
     
 </body>
 </html>
