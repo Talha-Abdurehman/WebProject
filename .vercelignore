@@ -1,0 +1,40 @@
+.env
+my-vercel-functions
+config.js
+
+# Ignore node_modules if using npm
+node_modules/
+
+# Ignore local environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# Ignore package-lock.json (optional if you don't need it for deployment)
+package-lock.json
+
+# Ignore log files
+*.log
+
+# Ignore Vercel specific config for local dev
+.vercel/
+
+# Ignore git-related files
+.git/
+.gitignore
+
+# Ignore README and documentation
+README.md
+*.md
+
+# Ignore files related to version control or local dev
+.vscode/
+.idea/
+
+# Ignore configuration files that aren't necessary in production
+*.config.js
+.eslintignore
+.eslintrc.js
+.prettierrc
+.vercel
