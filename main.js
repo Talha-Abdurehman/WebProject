@@ -1,7 +1,4 @@
 // main.js
-
-
-
 const supabaseClient = supabase.createClient(
   NEXT_PUBLIC_SUPABASE_URL,
   NEXT_PUBLIC_SUPABASE_KEY
