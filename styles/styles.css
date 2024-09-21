@@ -109,10 +109,9 @@ body {
     font-size: 8rem;
     overflow: hidden;
     width: fit-content;
-    height: fit-content;
-    
-    
-  }
+    height: fit-content;   
+}
+
 
 .intro {
 
@@ -183,7 +182,7 @@ body {
 input {
     padding: 0 10px;
     border: none;
-    border-radius: 99999px ;
+    border-radius: 15px;
     outline: none;
     width: 10rem;
     height: 2rem;
@@ -201,12 +200,24 @@ input {
     margin: auto;
     border-radius: 25px;
     height: 5rem;
-    padding: 5px 15px;
+    padding: 10px 15px;
 }
 
 button {
-    margin: 0;
-    margin: 0 45%;
+    border-radius: 25px;
+    height: 2.5rem;
+    width: 5.5rem;
+    border: 1px solid rgba(102, 252, 241, 0.3);
+    background-color: rgba(0, 0, 0,0) ;
+    backdrop-filter: blur(10px);
+    color: #66FCF1;
+    font-weight: 700;
+
+}
+
+
+.footerTitle {
+    color: #66FCF1;
 }
 
 /* Adding styles for a custom cursor */
@@ -225,7 +236,19 @@ button {
 
 }
 
-.nav-bar li:hover {
+.nav-bar li:hover .cursor {
     color: #45A29E;
 }
 
+
+.submitbutton button:hover ~ .cursor {
+    color: #45A29E;
+    background-color: #66FCF1;
+}
+
+.submitbutton {
+    margin: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

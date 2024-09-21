@@ -67,7 +67,6 @@ document.addEventListener('mousemove', (e)=>{
 })
 
 const listItems = document.querySelectorAll('.nav-bar li');
-
 listItems.forEach(item => {
     item.addEventListener('mouseenter', () => {
         cursor.style.transform = 'translate(-50%,-50%) scale(2)';
@@ -76,4 +75,14 @@ listItems.forEach(item => {
     item.addEventListener('mouseleave', () => {
         cursor.style.transform = 'translate(-50%,-50%) scale(1)'; // Reset to original size
     });
+});
+
+const Button = document.querySelectorAll('.submitbutton button');
+
+Button.addEventListener('mouseenter', () => {
+    cursor.style.transform = 'translate(-50%,-50%) scale(2)';
+});
+
+Button.addEventListener('mouseleave', () => {
+    cursor.style.transform = 'translate(-50%,-50%) scale(1)'; // Reset to original size
 });
