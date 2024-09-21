@@ -1,10 +1,12 @@
 // main.js
-const supabaseClient = supabase.createClient(
-  NEXT_PUBLIC_SUPABASE_URL,
-  NEXT_PUBLIC_SUPABASE_KEY
+console.log(process.env)
 
 
-)
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_KEY;
+
+
+const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey)
 
 // Function to add a user from the form
 // Attach event listener to the form for adding a user
