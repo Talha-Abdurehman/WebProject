@@ -25,9 +25,9 @@ function randomize(element, delay) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const listItems = document.querySelectorAll('.nav-list li');
+    const navItems = document.querySelectorAll('.nav-list li a'); // Target anchor tags inside li
 
-    listItems.forEach((item, index) => {
+    navItems.forEach((item, index) => {
         const titleElement = item;
         const text = titleElement.innerText;
         titleElement.innerHTML = ''; // Clear the text
@@ -52,37 +52,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-randomize('hero-title', 120)
-randomize('intro',120)
-randomize('whoami',30)
-
+randomize('hero-title', 120);
+randomize('intro', 120);
+randomize('whoami', 30);
 
 // CREATING A CUSTOM CURSOR
 const cursor = document.querySelector('.cursor');
-document.addEventListener('mousemove', (e)=>{
+document.addEventListener('mousemove', (e) => {
     cursor.style.left = (e.pageX) + 'px';
     cursor.style.top = (e.pageY) + 'px';
+});
 
-})
-
-const listItems = document.querySelectorAll('.nav-bar li');
-listItems.forEach(item => {
+// Handle cursor scaling on navigation items
+const navItemsHover = document.querySelectorAll('.nav-list li a'); // Target anchor tags for hover
+navItemsHover.forEach(item => {
     item.addEventListener('mouseenter', () => {
-        cursor.style.transform = 'translate(-50%,-50%) scale(2)';
+        cursor.style.transform = 'translate(-50%, -50%) scale(2)';
     });
 
     item.addEventListener('mouseleave', () => {
-        cursor.style.transform = 'translate(-50%,-50%) scale(1)'; // Reset to original size
+        cursor.style.transform = 'translate(-50%, -50%) scale(1)'; // Reset to original size
     });
 });
 
-const Button = document.querySelectorAll('.submitbutton button');
+// Handle cursor scaling on submit button
+const buttons = document.querySelectorAll('.submitbutton button');
+buttons.forEach(button => {
+    button.addEventListener('mouseenter', () => {
+        cursor.style.transform = 'translate(-50%, -50%) scale(2)';
+    });
 
-Button.addEventListener('mouseenter', () => {
-    cursor.style.transform = 'translate(-50%,-50%) scale(2)';
-});
-
-Button.addEventListener('mouseleave', () => {
-    cursor.style.transform = 'translate(-50%,-50%) scale(1)'; // Reset to original size
+    button.addEventListener('mouseleave', () => {
+        cursor.style.transform = 'translate(-50%, -50%) scale(1)'; // Reset to original size
+    });
 });
