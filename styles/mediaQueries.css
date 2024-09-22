@@ -192,10 +192,12 @@
 
     #prev {
         width: 4rem;
+        font-size: 2rem;
     }
 
     #next {
         width: 4rem;
+        font-size: 2rem;
     }
 
 
