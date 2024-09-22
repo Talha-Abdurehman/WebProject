@@ -459,10 +459,7 @@ input {
     }
 }
 
-@media screen and (min-width: 1920px) and (min-height: 1080px) {
-    /* Your styles for high-resolution screens go here */
-    
-    /* Example adjustments */
+@media screen and (min-width: 1920px) {
     .hero-title {
         font-size: 10rem;
     }
@@ -476,12 +473,21 @@ input {
     }
     
     .nav-bar {
-        width: calc(100% - 12rem);
+        width: calc(100% - 8rem);
         height: 5rem;
     }
 
     .nav-list li a {
         font-size: 1.5rem;
+    }
+
+    .new-carousel {
+        gap: 0;
+    }
+
+    .carousel {
+        width: 90%;
+        margin: 0 .3rem;
     }
 
     
