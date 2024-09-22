@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talha Abdurehman</title>
+    
     <link href="styles/Carouselstyle.css"  rel="stylesheet">
     <link href="styles/styles.css"  rel="stylesheet">
-  
+    <link rel="stylesheet" href="/styles/mediaQueries.css">
 </head>
 <body>
 
 
-
+    <div class="cursor"></div>
 
 
     <div class="nav-bar">
@@ -34,7 +35,7 @@
 
 
 <div class="new-carousel">
-    <button class="arrow" id="prev"><</button>
+    <button class="arrow" id="prev"  onclick="changeColor()"><</button>
   <!-- carousel -->
   <div class="carousel">
     <!-- list item -->
@@ -143,7 +144,7 @@
 
     
     </div>
-    <button class="arrow" id="next">></button>
+    <button class="arrow" id="next"  onclick="changeColor()">></button>
     <!-- time running -->
     <div class="time"></div>
 </div>
@@ -183,12 +184,12 @@
     </div>
 
     
-    <div class="cursor"></div>
+    
     
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-    <script src="/scripts/script.js"></script>
-    <script src="/scripts/main.js"></script>
-    <script src="/scripts/CarouselScript.js"></script>
+    <script src="/scripts/script.js" defer></script>
+    <script src="/scripts/main.js" defer></script>
+    <script src="/scripts/CarouselScript.js" defer></script>
     
 </body>
 </html>
