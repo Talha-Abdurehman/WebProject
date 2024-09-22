@@ -459,6 +459,38 @@ input {
     }
 }
 
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+    /* Your styles for high-resolution screens go here */
+    
+    /* Example adjustments */
+    .hero-title {
+        font-size: 10rem;
+    }
+    
+    .intro {
+        font-size: 6rem;
+    }
+    
+    .profess {
+        font-size: 2.5rem;
+    }
+    
+    .nav-bar {
+        width: calc(100% - 12rem);
+        height: 5rem;
+    }
+
+    .nav-list li a {
+        font-size: 1.5rem;
+    }
+
+    
+    /* Add more style adjustments as needed */
+}
+
+
+
+
 /* iPhone 6, 6S, 7, 8, SE (2nd generation) */
 @media (max-width: 375px) {
     .nav-bar {
