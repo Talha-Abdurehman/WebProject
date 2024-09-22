@@ -126,7 +126,6 @@ body {
 
     color: #45A29E;
     font-size: 2rem;
-    margin: 3%;
     overflow: hidden;
     letter-spacing: 0.3rem;
 
@@ -222,7 +221,7 @@ input {
     padding: 10px 15px;
 }
 
-button {
+#submit-button {
     border-radius: 25px;
     height: 2.5rem;
     width: 5.5rem;
@@ -284,3 +283,363 @@ button {
     color: #45A29E;
 }
 
+.slider {
+    width: 100%;
+    border: 1px solid red;
+    height: var(--height);
+}
+
+.slider .list {
+    display: flex;
+}
+
+.slider .list .item {
+    width: var(--width);
+    height: var(--height);
+}
+
+.slider .list .item img {
+    width: 100%;
+}
+
+/* General mobile settings */
+@media (max-width: 768px) {
+
+    /* Adjust hero section for smaller screens */
+    .hero {
+        height: auto;
+        background-size: cover; /* Ensure the background scales well */
+        padding: 2rem; /* Add some padding for mobile */
+    }
+
+    /* Reduce font sizes for hero title and intro text */
+    .hero-title {
+        font-size: 4rem; /* Scale down font size for mobile */
+    }
+
+    .intro {
+        font-size: 2.5rem; /* Adjust intro text size */
+        letter-spacing: 0.3rem;
+    }
+
+    .profess {
+        font-size: 1rem; /* Smaller profess text */
+    }
+
+    /* Ensure nav-bar fits in mobile width */
+    .nav-bar {
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+        height: auto; /* Let the height adjust automatically */
+        flex-direction: row; /* Stack nav items vertically */
+        padding: 1rem; /* Add some padding */
+        width: 100vw; /* Take full width on mobile */
+    }
+
+    .nav-list {
+        font-size: .3rem;
+        flex-direction: row; /* Stack nav items vertically */
+        gap: 1rem; /* Reduce the gap between items */
+        text-align: center; /* Center-align the nav items */
+    }
+
+    .logo {
+        font-size: .7rem;
+    }
+
+    /* Reduce margins and paddings */
+    .hero-title span, .intro span {
+        width: auto; /* Let span width adjust automatically */
+    }
+
+    /* Adjust input and button sizes */
+    input {
+        width: 80%; /* Take most of the width */
+        height: 2rem;
+    }
+
+    .text-area textarea {
+        width: 90%; /* Use most of the screen width */
+        height: 8rem;
+    }
+
+    /* Adjust button size and padding */
+    button {
+        width: 6rem;
+        padding: 0.5rem;
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding: 2rem 0;
+    }
+
+    /* Adjust cursor size for smaller devices */
+    .cursor {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Even smaller screens (like phones) */
+@media (max-width: 480px) {
+
+    /* Further reduce hero title and intro font sizes */
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .intro {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    /* Ensure the nav bar fits properly */
+    .nav-bar {
+        padding: 0.5rem;
+        height: 1.5rem;
+    }
+
+    /* Make inputs and text areas fill most of the width */
+    input {
+        width: 90%;
+    }
+
+    .text-area textarea {
+        width: 95%;
+    }
+
+    /* Reduce button size */
+    button {
+        width: 5rem;
+    }
+
+    /* Cursor size adjustment */
+    .cursor {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/* iPhone SE (1st generation), iPhone 5, iPhone 5S, iPhone 5C */
+@media (max-width: 320px) {
+    .nav-bar {
+        padding: 0.2rem;
+        height: auto;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .intro {
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .profess {
+        font-size: 1rem;
+    }
+
+    .nav-list a {
+        padding: 0.6rem 0;
+    }
+
+    .text-area textarea {
+        width: 95%;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    button {
+        width: 4.5rem;
+    }
+}
+
+/* iPhone 6, 6S, 7, 8, SE (2nd generation) */
+@media (max-width: 375px) {
+    .nav-bar {
+        padding: 0.4rem;
+        height: auto;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .intro {
+        font-size: 2.2rem;
+        letter-spacing: 0.25rem;
+    }
+
+    .profess {
+        font-size: 1.2rem;
+    }
+
+    .nav-list a {
+        padding: 0.7rem 0;
+    }
+
+    .text-area textarea {
+        width: 94%;
+    }
+
+    input {
+        width: 85%;
+    }
+
+    button {
+        width: 5rem;
+    }
+}
+
+/* iPhone X, XS, 11 Pro */
+@media (max-width: 375px) and (min-height: 812px) {
+    .nav-bar {
+        padding: 0.5rem;
+        height: auto;
+    }
+
+    .hero-title {
+        font-size: 3.2rem;
+    }
+
+    .intro {
+        font-size: 2.3rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .profess {
+        font-size: 1.3rem;
+    }
+
+    .nav-list a {
+        padding: 0.8rem 0;
+    }
+
+    .text-area textarea {
+        width: 90%;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    button {
+        width: 5.2rem;
+    }
+}
+
+/* iPhone 12 Mini, 13 Mini */
+@media (max-width: 360px) and (min-height: 780px) {
+    .nav-bar {
+        padding: 0.5rem;
+        height: auto;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .intro {
+        font-size: 2.4rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .profess {
+        font-size: 1.5rem;
+    }
+
+    .nav-list a {
+        padding: 0.9rem 0;
+    }
+
+    .text-area textarea {
+        width: 92%;
+    }
+
+    input {
+        width: 85%;
+    }
+
+    button {
+        width: 5.5rem;
+    }
+}
+
+/* iPhone 12, 12 Pro, 13, 13 Pro */
+@media (max-width: 390px) and (min-height: 844px) {
+    .nav-bar {
+        padding: 0.6rem;
+        height: auto;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .intro {
+        font-size: 2.5rem;
+        letter-spacing: 0.35rem;
+    }
+
+    .profess {
+        font-size: 1.6rem;
+    }
+
+    .nav-list a {
+        padding: 1rem 0;
+    }
+
+    .text-area textarea {
+        width: 93%;
+    }
+
+    input {
+        width: 85%;
+    }
+
+    button {
+        width: 6rem;
+    }
+}
+
+/* iPhone 12 Pro Max, 13 Pro Max */
+@media (max-width: 428px) and (min-height: 926px) {
+    .nav-bar {
+        padding: 0.7rem;
+        height: auto;
+    }
+
+    .hero-title {
+        font-size: 4.2rem;
+    }
+
+    .intro {
+        font-size: 2.6rem;
+        letter-spacing: 0.4rem;
+    }
+
+    .profess {
+        font-size: 1.7rem;
+    }
+
+    .nav-list a {
+        padding: 1.2rem 0;
+    }
+
+    .text-area textarea {
+        width: 90%;
+    }
+
+    input {
+        width: 85%;
+    }
+
+    button {
+        width: 6.5rem;
+    }
+}
