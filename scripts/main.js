@@ -10,16 +10,24 @@ document.getElementById('userForm').addEventListener('submit', async function(ev
   const phone = document.getElementById('phone').value;
   const message = document.getElementById('user_message').value;
 
-  // Call the edge function to send the data to Supabase
-  await addUser(username, email, phone, message);
-
-  console.log("Is it working correctly");
 
   // Clear the input fields
   document.getElementById('name').value = '';
   document.getElementById('email').value = '';
   document.getElementById('phone').value = '';
   document.getElementById('user_message').value = '';
+
+
+  const response = await fetch('/api/send-mail', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, message,username }),
+  });
+  // Call the edge function to send the data to Supabase
+  await addUser(username, email, phone, message);
+
+  console.log("Is it working correctly");
+
 });
 
 // Function to call the edge function and add user to Supabase
@@ -87,5 +95,15 @@ async function checkConnection() {
     console.error('Error:', err);
   }
 }
+
+
+document.getElementById('userForm').addEventListener('submit', async function (event) {
+  event.preventDefault();
+
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+});
+
 
 checkConnection();
