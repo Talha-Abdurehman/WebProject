@@ -35,9 +35,7 @@ async function sendEmailAndAppend(recipientEmail, message, username, phone) {
     to: recipientEmail,
     subject: 'Thank You For Reaching Out',
     text: 
-    `Hi ${username},
-    
-    This is to inform you that I have recieved your Message.`,
+    `Hi ${username},\n\nThis is to inform you that I have recieved your Message.`,
   };
 
   await transporter.sendMail(mailOptions);
